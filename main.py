@@ -65,15 +65,14 @@ class TestDataset(nn.Module):
 
 
 test_dataset = TestDataset(
-    path_x='/kaggle/working/testset_cmb_T_topK.txt',
-    path_tags = "/kaggle/working/roberta_BERTSUM_SEQ_submission_T_5.csv",
+    path_x = f"./DATA/DATA/{df.iloc[index]['input_x']}",
+    path_tags = f"./DATA/DATA/{df.iloc[index]['label']}",
     tokenizer=tokenizer,
     max_seq_length=512,
     max_target_length=512, 
 );
 
 test_dataloader = DataLoader(test_dataset,batch_size=8);
-
 
 buffer = [];
 model.eval()
@@ -98,4 +97,4 @@ data = {
 }; 
 df = pd.DataFrame(data);   
 
-df.to_csv("submission_topK_T.csv",index=False);
+df.to_csv("output.csv",index=False);
