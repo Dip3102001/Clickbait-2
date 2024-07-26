@@ -1,11 +1,11 @@
-title,location
-BARTSUM_topk_training,dippatel03/bartsum-topk-training-t
-BARTSUM_sub_training,dippatel03/bartsum-sub-training-t
-BARTSUM_subseq_training,dippatel03/bartsum-subseq-training-t
+title,location,input_x,label
+BARTSUM_topk_training,dippatel03/bartsum-topk-training-t,testset_cmb_T_topK.txt,roberta_BERTSUM_SEQ_submission_T_5.csv
+BARTSUM_sub_training,dippatel03/bartsum-sub-training-t,testset_cmb_T_seq.txt,roberta_BERTSUM_SEQ_submission_T_5.csv
+BARTSUM_subseq_training,dippatel03/bartsum-subseq-training-t,testset_cmb_T_subseq.txt,roberta_BERTSUM_SEQ_submission_T_5.csv
 
-BART_TR_Conditional_generation,-
+BART_TR_Conditional_generation,-,,
 
-BART_Generation,dippatel03/fork-of-bart-base-training-da9fb6
-BART_Generation_rouge,dippatel03/bart-base-training
-Conditional_BART_Generation_rouge,-
-Conditional_BART_Generation,dippatel03/conditional-bart-generation-norouge
+BART_Generation,dippatel03/fork-of-bart-base-training-da9fb6,testset_cmb.txt,roberta_submission.csv
+BART_Generation_rouge,dippatel03/bart-base-training,rev_testset_cmb.txt,roberta_submission.csv
+Conditional_BART_Generation_rouge,-,,
+Conditional_BART_Generation,dippatel03/conditional-bart-generation-norouge,testset_cmb.txt,roberta_submission.csv
