@@ -2,12 +2,22 @@ import logging;
 logging.disable(logging.WARNING);
 
 import os;
+import numpy as np;
+import pandas as pd;
 
 # downloading weights
 os.system("mkdir -p ~/.kaggle");
 os.system("mv kaggle.json ~/.kaggle/");
 os.system("chmod 600 ~/.kaggle/kaggle.json");
-os.system("kaggle kernels output dippatel03/bartsum-topk-training-t -p /content/Clickbait-2/weights/");
+
+df = pd.read_csv("./weights.csv");
+print(df['title']);
+
+print("Enter Label");
+index = int(input("Waiting for the input.. "));
+
+print("Downloading weights..");
+os.system(f"kaggle kernels output {df.iloc[index]['location']} -p /content/Clickbait-2/weights/");
 
 
 
