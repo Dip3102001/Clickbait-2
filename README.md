@@ -66,22 +66,22 @@ pip install -r 'requirement.txt'
  
 ## Project structure
 
-1. Data Folder
+1. *Data Folder*
 - Data folder contains all training, evaluation and test data.
 
-2. outout Folder
+2. *outout Folder*
 - downloaded weights from the cloud and output generated via main.py is kept inside output folder.
 
-3 notebooks Folder
+3 *notebooks Folder*
 - It contains all colab notebook with output of experiment carried out during project work.
 
-4. main.py
+4. *main.py*
 - main scirpt file to evaluate task-1 with different hyperparameter setting. This script is created for inference purpose only. 
 
-5. requirement.txt
+5. *requirement.txt*
 - contains all Python packages that were used during project running.
 
-6. weights.pt
+6. *weights.pt*
 - This is human readable comma seperated file containing data about the location of weights file on cloud. extension '.pt' is bit misleading, rather it nothing but character human readable file.
 
 
