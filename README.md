@@ -23,17 +23,17 @@ I am highly recommending to try and test python script on google colab, because 
 2. cloning repository to google colab environment.
 
 
-![cloning repo to colab](https://github.com/Dip3102001/Clickbait-1/blob/main/SS/cloning.png)
+![cloning repo to colab](https://github.com/Dip3102001/Clickbait-2/blob/main/SS/clickbait_2.png)
 
 3. moving into clonned directory.
 
 
-![chdir](https://github.com/Dip3102001/Clickbait-1/blob/main/SS/chdir.png)
+![chdir](https://github.com/Dip3102001/Clickbait-2/blob/main/SS/clickbait_2_mv.png)
 
 4. running main.py script.
 
 
-![running main.py](https://github.com/Dip3102001/Clickbait-1/blob/main/SS/main.png)
+![running main.py](https://github.com/Dip3102001/Clickbait-2/blob/main/SS/clickbait_2_waiting_for_input.png)
  
 ### Running on local system
 
