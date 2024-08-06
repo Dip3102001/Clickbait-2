@@ -16,6 +16,10 @@ print(df['title']);
 print("Enter Label");
 index = int(input("Waiting for the input.. "));
 
+if index == 3 or index == 6:
+    print("Unfotunately weights for setting 4 and 7 are not available for inference");
+    exit(0);
+
 print("Downloading weights..");
 os.system(f"kaggle kernels output {df.iloc[index]['location']} -p /content/Clickbait-2/weights/");
 
@@ -39,6 +43,7 @@ tokenizer = BartTokenizer.from_pretrained('facebook/bart-base');
 import numpy as np;
 import pandas as pd;
 
+from tqdm import tqdm;
 
 class TestDataset(nn.Module):
     def __init__(self,path_x,path_tags,tokenizer,max_seq_length,max_target_length):
@@ -76,7 +81,7 @@ test_dataloader = DataLoader(test_dataset,batch_size=8);
 
 buffer = [];
 model.eval()
-for batch in test_dataloader:
+for batch in tqdm(test_dataloader,ascii=True,desc="Processing..."):
     input_ids = batch['input_ids'].to(device);
     attention_mask = batch['attention_mask'].to(device);
     
