@@ -86,6 +86,11 @@ pip install -r 'requirement.txt'
 
 - main.py is python script file for evaluation of different task carried out during study for clickbait-classification. This python script file is interactive. Which asks for input from the user about which different hyperparameter setting one want to try. The reason why I made it interactive because there are in total more than 10 different hyperparameter setting configuration. Which makes it difficult to take input from command line and parse it down. 
 
+> [!IMPORTANT]
+> Don't forget to provide input to program otherwise it won't go ahead.
+
+![waiting for input](https://github.com/Dip3102001/Clickbait-1/blob/main/SS/clickbait_2_waiting_for_input.png)
+
 
 
 
