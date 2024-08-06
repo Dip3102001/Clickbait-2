@@ -17,7 +17,7 @@ print("Enter Label");
 index = int(input("Waiting for the input.. "));
 
 if index == 3 or index == 6:
-    print("Unfotunately weights for setting 4 and 7 are not available for inference");
+    print("Unfotunately weights for setting 3 and 6 are not available for inference");
     exit(0);
 
 print("Downloading weights..");
