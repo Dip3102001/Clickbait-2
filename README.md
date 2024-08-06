@@ -89,7 +89,7 @@ pip install -r 'requirement.txt'
 > [!IMPORTANT]
 > Don't forget to provide input to program otherwise it won't go ahead.
 
-![waiting for input](https://github.com/Dip3102001/Clickbait-1/blob/main/SS/clickbait_2_waiting_for_input.png)
+![waiting for input](https://github.com/Dip3102001/Clickbait-2/blob/main/SS/clickbait_2_waiting_for_input.png)
 
 
 
