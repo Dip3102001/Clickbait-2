@@ -72,7 +72,7 @@ pip install -r 'requirement.txt'
 2. *outout Folder*
 - downloaded weights from the cloud and output generated via main.py is kept inside output folder.
 
-3 *notebooks Folder*
+3. *notebooks Folder*
 - It contains all colab notebook with output of experiment carried out during project work.
 
 4. *main.py*
